@@ -1,0 +1,7 @@
+apply plugin: 'java'
+
+jar {
+    baseName = 'gradle-dependency-graph'
+    version = '1.0.0'
+}
+

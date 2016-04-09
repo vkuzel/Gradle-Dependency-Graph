@@ -29,7 +29,7 @@ public class Node implements Serializable {
                 '}';
     }
 
-    public static class Project {
+    public static class Project implements Serializable {
         private final String name;
         private final String dir;
 

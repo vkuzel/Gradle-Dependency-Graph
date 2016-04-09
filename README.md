@@ -22,7 +22,7 @@ Add dependency to your project.
     }
 
 	dependencies {
-	        compile 'com.github.vkuzel:Gradle-Dependency-Graph:1.0.0'
+	        compile 'com.github.vkuzel:Gradle-Dependency-Graph:1.1.0'
 	}
 ````
 **Maven**
@@ -37,6 +37,6 @@ Add dependency to your project.
 	<dependency>
 	    <groupId>com.github.vkuzel</groupId>
 	    <artifactId>Gradle-Dependency-Graph</artifactId>
-	    <version>1.0.0</version>
+	    <version>1.1.0</version>
 	</dependency>
 ````

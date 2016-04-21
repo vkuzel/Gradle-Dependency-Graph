@@ -1,4 +1,4 @@
-package com.github.vkuzel.gradle_dependency_graph;
+package com.github.vkuzel.gradle_project_dependencies;
 
 import java.io.Serializable;
 import java.util.List;

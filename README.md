@@ -1,6 +1,6 @@
-# Gradle Dependency Graph
+# Gradle Project Dependencies
 
-[![](https://jitpack.io/v/vkuzel/Gradle-Dependency-Graph.svg)](https://jitpack.io/#vkuzel/Gradle-Dependency-Graph)
+[![](https://jitpack.io/v/vkuzel/Gradle-Project-Dependencies.svg)](https://jitpack.io/#vkuzel/Gradle-Project-Dependencies)
 
 ## Features
 
@@ -22,7 +22,7 @@ Add dependency to your project if you are not using Spring Boot Multi-Project Gr
     }
 
 	dependencies {
-	        compile 'com.github.vkuzel:Gradle-Dependency-Graph:2.0.0'
+	        compile 'com.github.vkuzel:Gradle-Project-Dependencies:3.0.0'
 	}
 ````
 **Maven**
@@ -36,7 +36,7 @@ Add dependency to your project if you are not using Spring Boot Multi-Project Gr
 
 	<dependency>
 	    <groupId>com.github.vkuzel</groupId>
-	    <artifactId>Gradle-Dependency-Graph</artifactId>
-	    <version>2.0.0</version>
+	    <artifactId>Gradle-Project-Dependencies</artifactId>
+	    <version>3.0.0</version>
 	</dependency>
 ````

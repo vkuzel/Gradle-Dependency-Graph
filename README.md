@@ -4,7 +4,7 @@
 
 ## Features
 
-A simple class (ProjectDependencies) that holds a project's name and list of other project names that this project depends on.
+A simple class (ProjectDependencies) that holds a project's name and list of projects this project depends on.
 
 This library is used by [Spring Boot Multi-Project Gradle Plugin](https://github.com/vkuzel/Gradle-Spring-Boot-Multi-Project-Plugin) to store dependencies between Gradle sub-projects.
 The plugin serializes Project object into file which can be used by an Java application. Check out example usage in [Gradle multi-project configuration template](https://github.com/vkuzel/Gradle-Multi-Project-Development-Template) for more details.

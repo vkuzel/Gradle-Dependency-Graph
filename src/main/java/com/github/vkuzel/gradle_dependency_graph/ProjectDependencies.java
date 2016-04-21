@@ -4,13 +4,13 @@ import java.io.Serializable;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Project implements Serializable {
+public class ProjectDependencies implements Serializable {
     private final String name;
     private final String dir;
     private final boolean root;
     private final List<String> dependencies;
 
-    public Project(String name, String dir, boolean root, List<String> dependencies) {
+    public ProjectDependencies(String name, String dir, boolean root, List<String> dependencies) {
         if (name == null) {
             throw new NullPointerException("Name has to be not null!");
         } else if (dir == null) {
@@ -43,7 +43,7 @@ public class Project implements Serializable {
 
     @Override
     public String toString() {
-        return "Project{" +
+        return "ProjectDependencies{" +
                 "name='" + name + '\'' +
                 ", dir='" + dir + '\'' +
                 ", root=" + root +
@@ -56,12 +56,12 @@ public class Project implements Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Project project = (Project) o;
+        ProjectDependencies projectDependencies = (ProjectDependencies) o;
 
-        if (root != project.root) return false;
-        if (!name.equals(project.name)) return false;
-        if (!dir.equals(project.dir)) return false;
-        return dependencies.equals(project.dependencies);
+        if (root != projectDependencies.root) return false;
+        if (!name.equals(projectDependencies.name)) return false;
+        if (!dir.equals(projectDependencies.dir)) return false;
+        return dependencies.equals(projectDependencies.dependencies);
 
     }
 

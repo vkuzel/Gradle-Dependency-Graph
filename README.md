@@ -4,14 +4,14 @@
 
 ## Features
 
-Simple class (Node) that holds project dependency graph of Gradle multi-project build.
+Simple class (Project) that holds a project's name and list of other project names that this project depends on.
 
-This library is used by [Spring Boot Multi-Project Gradle Plugin](https://github.com/vkuzel/Gradle-Spring-Boot-Multi-Project-Plugin) to hold a project structure.
-The plugin serializes Node object into to file that can be read and used by an Java application. Check out [Gradle multi-project configuration template](https://github.com/vkuzel/Gradle-Multi-Project-Development-Template) for more details.
+This library is used by [Spring Boot Multi-Project Gradle Plugin](https://github.com/vkuzel/Gradle-Spring-Boot-Multi-Project-Plugin) to store dependencies between Gradle sub-projects.
+The plugin serializes Project object into file which can be used by an Java application. Check out example usage in [Gradle multi-project configuration template](https://github.com/vkuzel/Gradle-Multi-Project-Development-Template) for more details.
 
 ## Getting started
 
-Add dependency to your project.
+Add dependency to your project if you are not using Spring Boot Multi-Project Gradle Plugin. Otherwise the plugin adds dependency implicitly.
 
 **Gradle**
 ````groovy
@@ -22,7 +22,7 @@ Add dependency to your project.
     }
 
 	dependencies {
-	        compile 'com.github.vkuzel:Gradle-Dependency-Graph:1.1.1'
+	        compile 'com.github.vkuzel:Gradle-Dependency-Graph:2.0.0'
 	}
 ````
 **Maven**
@@ -37,6 +37,6 @@ Add dependency to your project.
 	<dependency>
 	    <groupId>com.github.vkuzel</groupId>
 	    <artifactId>Gradle-Dependency-Graph</artifactId>
-	    <version>1.1.1</version>
+	    <version>2.0.0</version>
 	</dependency>
 ````
